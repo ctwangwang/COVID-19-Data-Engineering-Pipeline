@@ -6,7 +6,7 @@
 ## Project Overview
 This project implements an end-to-end data engineering pipeline that extracts COVID-19 data from the disease.sh API, processes it, stores it in PostgreSQL, and visualizes it using Streamlit. The entire pipeline is orchestrated using Apache Airflow and containerized with Docker.
 
-![Project Architecture](./images/architecture.png)
+![Project Architecture](./images/Covid19_Pipeline.png)
 
 ## Technologies Used
 - Python 3.9+
