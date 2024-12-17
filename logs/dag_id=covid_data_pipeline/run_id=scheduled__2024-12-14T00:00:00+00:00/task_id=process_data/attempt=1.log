@@ -1,0 +1,32 @@
+[2024-12-15T22:11:01.749+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: covid_data_pipeline.process_data scheduled__2024-12-14T00:00:00+00:00 [queued]>
+[2024-12-15T22:11:01.768+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: covid_data_pipeline.process_data scheduled__2024-12-14T00:00:00+00:00 [queued]>
+[2024-12-15T22:11:01.769+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-12-15T22:11:01.791+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): process_data> on 2024-12-14 00:00:00+00:00
+[2024-12-15T22:11:01.801+0000] {standard_task_runner.py:57} INFO - Started process 327 to run task
+[2024-12-15T22:11:01.808+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'covid_data_pipeline', 'process_data', 'scheduled__2024-12-14T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/covid_pipeline_dag.py', '--cfg-path', '/tmp/tmpu1tj6gdc']
+[2024-12-15T22:11:01.816+0000] {standard_task_runner.py:85} INFO - Job 13: Subtask process_data
+[2024-12-15T22:11:02.034+0000] {task_command.py:416} INFO - Running <TaskInstance: covid_data_pipeline.process_data scheduled__2024-12-14T00:00:00+00:00 [running]> on host efb61c2ab0bb
+[2024-12-15T22:11:02.311+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ctw2012105@@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='covid_data_pipeline' AIRFLOW_CTX_TASK_ID='process_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-14T00:00:00+00:00'
+[2024-12-15T22:11:02.374+0000] {covid_processor.py:15} INFO - Cleaning data
+[2024-12-15T22:11:02.385+0000] {covid_processor.py:39} INFO - Calculating additional metrics
+[2024-12-15T22:11:02.390+0000] {covid_processor.py:61} INFO - Aggregating data
+[2024-12-15T22:11:02.461+0000] {python.py:194} INFO - Done. Returned value was: Data processing completed
+[2024-12-15T22:11:02.578+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=covid_data_pipeline, task_id=process_data, execution_date=20241214T000000, start_date=20241215T221101, end_date=20241215T221102
+[2024-12-15T22:11:02.617+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-12-15T22:11:02.717+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-15T23:46:23.700+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: covid_data_pipeline.process_data scheduled__2024-12-14T00:00:00+00:00 [queued]>
+[2024-12-15T23:46:23.715+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: covid_data_pipeline.process_data scheduled__2024-12-14T00:00:00+00:00 [queued]>
+[2024-12-15T23:46:23.716+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-12-15T23:46:23.736+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): process_data> on 2024-12-14 00:00:00+00:00
+[2024-12-15T23:46:23.741+0000] {standard_task_runner.py:57} INFO - Started process 296 to run task
+[2024-12-15T23:46:23.746+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'covid_data_pipeline', 'process_data', 'scheduled__2024-12-14T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/covid_pipeline_dag.py', '--cfg-path', '/tmp/tmphx6yiyme']
+[2024-12-15T23:46:23.749+0000] {standard_task_runner.py:85} INFO - Job 8: Subtask process_data
+[2024-12-15T23:46:23.829+0000] {task_command.py:416} INFO - Running <TaskInstance: covid_data_pipeline.process_data scheduled__2024-12-14T00:00:00+00:00 [running]> on host 6cd16bdff3c4
+[2024-12-15T23:46:23.949+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ctw2012105@@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='covid_data_pipeline' AIRFLOW_CTX_TASK_ID='process_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-14T00:00:00+00:00'
+[2024-12-15T23:46:23.998+0000] {covid_processor.py:15} INFO - Cleaning data
+[2024-12-15T23:46:24.008+0000] {covid_processor.py:39} INFO - Calculating additional metrics
+[2024-12-15T23:46:24.015+0000] {covid_processor.py:61} INFO - Aggregating data
+[2024-12-15T23:46:24.068+0000] {python.py:194} INFO - Done. Returned value was: Data processing completed
+[2024-12-15T23:46:24.117+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=covid_data_pipeline, task_id=process_data, execution_date=20241214T000000, start_date=20241215T234623, end_date=20241215T234624
+[2024-12-15T23:46:24.172+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-12-15T23:46:24.217+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

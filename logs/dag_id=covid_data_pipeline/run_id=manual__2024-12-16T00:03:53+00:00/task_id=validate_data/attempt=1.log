@@ -1,0 +1,16 @@
+[2024-12-16T20:18:22.347+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: covid_data_pipeline.validate_data manual__2024-12-16T00:03:53+00:00 [queued]>
+[2024-12-16T20:18:22.357+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: covid_data_pipeline.validate_data manual__2024-12-16T00:03:53+00:00 [queued]>
+[2024-12-16T20:18:22.358+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-12-16T20:18:22.373+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): validate_data> on 2024-12-16 00:03:53+00:00
+[2024-12-16T20:18:22.380+0000] {standard_task_runner.py:57} INFO - Started process 209 to run task
+[2024-12-16T20:18:22.384+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'covid_data_pipeline', 'validate_data', 'manual__2024-12-16T00:03:53+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/covid_pipeline_dag.py', '--cfg-path', '/tmp/tmpkcxxz_bs']
+[2024-12-16T20:18:22.389+0000] {standard_task_runner.py:85} INFO - Job 11: Subtask validate_data
+[2024-12-16T20:18:22.477+0000] {task_command.py:416} INFO - Running <TaskInstance: covid_data_pipeline.validate_data manual__2024-12-16T00:03:53+00:00 [running]> on host 6c524df05549
+[2024-12-16T20:18:22.612+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ctw2012105@@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='covid_data_pipeline' AIRFLOW_CTX_TASK_ID='validate_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-16T00:03:53+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-16T00:03:53+00:00'
+[2024-12-16T20:18:22.658+0000] {data_validator.py:34} INFO - Validating data schema
+[2024-12-16T20:18:22.659+0000] {data_validator.py:50} INFO - Validating data quality
+[2024-12-16T20:18:22.664+0000] {data_validator.py:82} INFO - All validations passed successfully
+[2024-12-16T20:18:22.664+0000] {python.py:194} INFO - Done. Returned value was: Data validation completed
+[2024-12-16T20:18:22.706+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=covid_data_pipeline, task_id=validate_data, execution_date=20241216T000353, start_date=20241216T201822, end_date=20241216T201822
+[2024-12-16T20:18:22.771+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-12-16T20:18:22.827+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

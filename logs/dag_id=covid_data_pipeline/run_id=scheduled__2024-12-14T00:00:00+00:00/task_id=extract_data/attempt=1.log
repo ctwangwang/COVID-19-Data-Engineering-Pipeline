@@ -1,0 +1,32 @@
+[2024-12-15T22:10:56.937+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: covid_data_pipeline.extract_data scheduled__2024-12-14T00:00:00+00:00 [queued]>
+[2024-12-15T22:10:56.953+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: covid_data_pipeline.extract_data scheduled__2024-12-14T00:00:00+00:00 [queued]>
+[2024-12-15T22:10:56.954+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-12-15T22:10:56.987+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_data> on 2024-12-14 00:00:00+00:00
+[2024-12-15T22:10:56.999+0000] {standard_task_runner.py:57} INFO - Started process 310 to run task
+[2024-12-15T22:10:57.017+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'covid_data_pipeline', 'extract_data', 'scheduled__2024-12-14T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/covid_pipeline_dag.py', '--cfg-path', '/tmp/tmp10mb9we2']
+[2024-12-15T22:10:57.031+0000] {standard_task_runner.py:85} INFO - Job 7: Subtask extract_data
+[2024-12-15T22:10:57.264+0000] {task_command.py:416} INFO - Running <TaskInstance: covid_data_pipeline.extract_data scheduled__2024-12-14T00:00:00+00:00 [running]> on host efb61c2ab0bb
+[2024-12-15T22:10:57.620+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ctw2012105@@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='covid_data_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-14T00:00:00+00:00'
+[2024-12-15T22:10:57.624+0000] {covid_extractor.py:42} INFO - Fetching countries data from https://disease.sh/v3/covid-19/countries
+[2024-12-15T22:10:59.190+0000] {covid_extractor.py:62} INFO - Raw data saved to raw_data/covid_countries_20241215_221059.json
+[2024-12-15T22:10:59.196+0000] {covid_extractor.py:67} INFO - Transforming raw data into DataFrame
+[2024-12-15T22:10:59.272+0000] {python.py:194} INFO - Done. Returned value was: Data extraction completed
+[2024-12-15T22:10:59.315+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=covid_data_pipeline, task_id=extract_data, execution_date=20241214T000000, start_date=20241215T221056, end_date=20241215T221059
+[2024-12-15T22:10:59.370+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-12-15T22:10:59.414+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-15T23:46:20.885+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: covid_data_pipeline.extract_data scheduled__2024-12-14T00:00:00+00:00 [queued]>
+[2024-12-15T23:46:20.895+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: covid_data_pipeline.extract_data scheduled__2024-12-14T00:00:00+00:00 [queued]>
+[2024-12-15T23:46:20.896+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-12-15T23:46:20.914+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_data> on 2024-12-14 00:00:00+00:00
+[2024-12-15T23:46:20.919+0000] {standard_task_runner.py:57} INFO - Started process 281 to run task
+[2024-12-15T23:46:20.924+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'covid_data_pipeline', 'extract_data', 'scheduled__2024-12-14T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/covid_pipeline_dag.py', '--cfg-path', '/tmp/tmp77e9p5py']
+[2024-12-15T23:46:20.929+0000] {standard_task_runner.py:85} INFO - Job 2: Subtask extract_data
+[2024-12-15T23:46:21.017+0000] {task_command.py:416} INFO - Running <TaskInstance: covid_data_pipeline.extract_data scheduled__2024-12-14T00:00:00+00:00 [running]> on host 6cd16bdff3c4
+[2024-12-15T23:46:21.180+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ctw2012105@@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='covid_data_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-14T00:00:00+00:00'
+[2024-12-15T23:46:21.185+0000] {covid_extractor.py:42} INFO - Fetching countries data from https://disease.sh/v3/covid-19/countries
+[2024-12-15T23:46:21.965+0000] {covid_extractor.py:62} INFO - Raw data saved to raw_data/covid_countries_20241215_234621.json
+[2024-12-15T23:46:21.969+0000] {covid_extractor.py:67} INFO - Transforming raw data into DataFrame
+[2024-12-15T23:46:22.026+0000] {python.py:194} INFO - Done. Returned value was: Data extraction completed
+[2024-12-15T23:46:22.058+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=covid_data_pipeline, task_id=extract_data, execution_date=20241214T000000, start_date=20241215T234620, end_date=20241215T234622
+[2024-12-15T23:46:22.086+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-12-15T23:46:22.124+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
