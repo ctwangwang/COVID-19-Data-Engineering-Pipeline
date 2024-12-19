@@ -126,6 +126,10 @@ POSTGRES_DB=covid_db
 POSTGRES_HOST=postgres
 ```
 
+## Dashboard
+
+![Project Architecture](./images/Dashboard1.png)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
